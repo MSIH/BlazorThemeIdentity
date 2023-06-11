@@ -14,6 +14,7 @@ namespace BlazorThemeIdentity
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+            // this is based on work done by https://github.com/affableashish
 
             // Add services to the container.
             var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
