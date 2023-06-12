@@ -8,11 +8,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Remove="Pages\Shared\_LoginPartial.cshtml" />
-    <Content Remove="Pages\Shared\_ValidationScriptsPartial.cshtml" />
-  </ItemGroup>
-
-  <ItemGroup>
     <None Remove="Pages\Shared\_Layout.css" />
   </ItemGroup>
 
