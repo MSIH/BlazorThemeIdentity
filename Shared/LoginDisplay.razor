@@ -1,4 +1,6 @@
-﻿<AuthorizeView>
+﻿<CascadingAuthenticationState>
+
+<AuthorizeView>
     <Authorized>
         <a href="Identity/Account/Manage">Hello, @context.User.Identity?.Name!</a>
         <form method="post" action="Identity/Account/Logout">
@@ -10,3 +12,4 @@
         <a href="Identity/Account/Login">Log in</a>
     </NotAuthorized>
 </AuthorizeView>
+</CascadingAuthenticationState>
