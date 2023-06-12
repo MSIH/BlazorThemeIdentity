@@ -69,8 +69,8 @@ a, .btn-link {
         content: "An error has occurred."
     }
 
-/*from blazor*/
-/* _content/BlazorThemeIdentity/Shared/MainLayout.razor.rz.scp.css */
+/* start from Shared/MainLayout.css */
+
 .page {
     position: relative;
     display: flex;
@@ -93,8 +93,6 @@ main {
     display: flex;
     align-items: center;
 }
-
-
 
     .top-row a, .top-row .btn-link {
         white-space: nowrap;
@@ -143,8 +141,9 @@ main {
         padding-right: 1.5rem !important;
     }
 }
-/* _content/BlazorThemeIdentity/Shared/NavMenu.razor.rz.scp.css */
+/* end from Shared/MainLayout.css */
 
+/* start from Shared/NavMenu.css */
 .navbar-toggler {
     background-color: rgba(255, 255, 255, 0.1);
 }
@@ -203,20 +202,19 @@ main {
     }
 
     .collapse {
-        /* Never collapse the sidebar for wide screens */
+         Never collapse the sidebar for wide screens 
         display: block !important;
     }
 
     .nav-scrollable {
-        /* Allow sidebar to scroll for tall menus */
+         Allow sidebar to scroll for tall menus 
         height: calc(100vh - 3.5rem);
         overflow-y: auto;
     }
 }
+/* end from Shared/NavMenu.css */
 
-/*from blazor*/
-
-/*address this*/
+/* fix top row background color for identity pages*/
 .top-row.auth {
     background-color: #f7f7f7;
 }
